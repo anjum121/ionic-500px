@@ -6,3 +6,5 @@
 *.iml
 out
 gen
+coolPhotos/.editorconfig
+coolPhotos/.gitignore
