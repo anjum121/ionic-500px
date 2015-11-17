@@ -1,0 +1,13 @@
+{
+  "views.main.Splendid!": "رائع!",
+  "directives.language-select.Language": "اللغة المختارة",
+  "views.settings.title": "إعدادات التطبيق",
+  "views.menu.title": "قائمة طعام",
+  "views.menu.login": "تسجيل الدخول",
+  "views.menu.home": "الصفحة الرئيسية",
+  "views.menu.search": "بحث",
+  "views.menu.favorite": "المفضل",
+  "views.menu.random": "عشوائي",
+  "views.menu.settings": "إعدادات",
+  "views.menu.about": "حول"
+}

@@ -1,0 +1,13 @@
+{
+  "views.main.Splendid!": "Splendid!",
+  "directives.language-select.Language": "Selected Language",
+  "views.settings.title": "Application Settings",
+  "views.menu.title": "Menu",
+  "views.menu.login": "Login",
+  "views.menu.home": "Home",
+  "views.menu.search": "Search",
+  "views.menu.favorite": "Favorite",
+  "views.menu.random": "Random",
+  "views.menu.settings": "Settings",
+  "views.menu.about": "About"
+}

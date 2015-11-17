@@ -1,0 +1,13 @@
+{
+  "views.main.Splendid!": "Отлично!",
+  "directives.language-select.Language": "Выбранный язык",
+  "views.settings.title": "настройки приложения",
+  "views.menu.title": "Меню",
+  "views.menu.login": "Авторизоваться",
+  "views.menu.home": "Главная",
+  "views.menu.search": "поиск",
+  "views.menu.favorite": "любимый",
+  "views.menu.random": "случайный",
+  "views.menu.settings": "настройки",
+  "views.menu.about": "Около"
+}

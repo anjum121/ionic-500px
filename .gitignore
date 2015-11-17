@@ -1,2 +1,8 @@
 .sass-cache
 *.css.map
+/coolPhotos/www/lib
+
+.idea
+*.iml
+out
+gen
