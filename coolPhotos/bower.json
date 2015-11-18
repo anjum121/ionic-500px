@@ -10,6 +10,7 @@
     "angular-translate-storage-local": "~2.8.1",
     "angular-translate-handler-log": "~2.8.1",
     "angular-dynamic-locale": "~0.1.28",
-    "angular-i18n": "~1.4.7"
+    "angular-i18n": "~1.4.7",
+    "restangular": "~1.5.1"
   }
 }

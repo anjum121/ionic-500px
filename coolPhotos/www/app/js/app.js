@@ -3,6 +3,7 @@
   angular.module('coolPhotos', [
     'ionic',
     'ngCookies',
+    'restangular',
     'pascalprecht.translate',// angular-translate
     'tmh.dynamicLocale'// angular-dynamic-locale
   ])

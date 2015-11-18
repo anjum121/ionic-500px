@@ -1,8 +1,140 @@
-<ion-view view-title=".. ">
-  <ion-content>
-    <h1>..</h1>
+<ion-view cache-view="true" hide-nav-bar="true">
 
+  <div class="bar bar-header">
+    <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+    <div class="h1 title"> </div>
+    <button class="button button-clear button-positive"></button>
+  </div>
 
-    {{"views.main.Splendid!" | translate}}
-  </ion-content>
+    <ion-content class="has-header">
+      <div class="list card" ng-repeat="photo in vm.photos">
+
+        <div class="item item-avatar">
+        <img ng-src="{{photo.user.userpic_https_url}}">
+        <h2>{{photo.user.fullname}}</h2>
+        <p>{{photo.user.city}}, {{photo.user.country}}</p>
+        </div>
+
+        <div class="  ">
+        <img class="full-image" ng-src="{{photo.image_url}}">
+        <!--<p>-->
+        <!--{{photo.description}}-->
+        <!--</p>-->
+        <!--<p class="item-body">-->
+        <!--<a href="#" class="subdued">{{photo.favorites_count}} Like</a>-->
+        <!--<a href="#" class="subdued">{{photo.comments_count}} Comments</a>-->
+        <!--</p>-->
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#">
+            <i class="icon ion-thumbsup"></i>
+            {{photo.favorites_count}} Like
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-chatbox"></i>
+            {{photo.comments_count}} Comment
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
+      </div>
+        <ion-infinite-scroll
+          on-infinite="vm.loadMore()"
+          distance="5%"
+          ng-if="!moreDataCanBeLoaded"
+          >
+        </ion-infinite-scroll>
+    </ion-content>
 </ion-view>
+
+
+<!--<ion-content class="has-header">-->
+<!--<div class="list card" ng-repeat="photo in vm.photos">-->
+<!--<div class="item item-avatar">-->
+<!--<img ng-src="{{photo.user.userpic_https_url}}">-->
+<!--<h2>{{photo.user.fullname}}</h2>-->
+<!--<p>{{photo.user.city}}, {{photo.user.country}}</p>-->
+<!--</div>-->
+
+<!--<div class="item item-body">-->
+<!--&lt;!&ndash;<img class="full-image" ng-src="{{photo.image_url}}">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>&ndash;&gt;-->
+<!--&lt;!&ndash;{{photo.description}}&ndash;&gt;-->
+<!--&lt;!&ndash;</p>&ndash;&gt;-->
+<!--<p>-->
+<!--<a href="#" class="subdued">{{photo.favorites_count}} Like</a>-->
+<!--<a href="#" class="subdued">{{photo.comments_count}} Comments</a>-->
+<!--</p>-->
+<!--</div>-->
+
+<!--<div class="item tabs tabs-secondary tabs-icon-left">-->
+<!--<a class="tab-item" href="#">-->
+<!--<i class="icon ion-thumbsup"></i>-->
+<!--Like-->
+<!--</a>-->
+<!--<a class="tab-item" href="#">-->
+<!--<i class="icon ion-chatbox"></i>-->
+<!--Comment-->
+<!--</a>-->
+<!--<a class="tab-item" href="#">-->
+<!--<i class="icon ion-share"></i>-->
+<!--Share-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;<ion-infinite-scroll&ndash;&gt;-->
+<!--&lt;!&ndash;immediate-check="false"&ndash;&gt;-->
+<!--&lt;!&ndash;ng-if="!noMoreItemsAvailable"&ndash;&gt;-->
+<!--&lt;!&ndash;ng-if="vm.moreDataCanBeLoaded()"&ndash;&gt;-->
+<!--&lt;!&ndash;icon="ion-loading-c"&ndash;&gt;-->
+<!--&lt;!&ndash;on-infinite="vm.loadMore()"&ndash;&gt;-->
+<!--&lt;!&ndash;distance="1%">&ndash;&gt;-->
+<!--&lt;!&ndash;</ion-infinite-scroll>&ndash;&gt;-->
+<!--<ion-infinite-scroll-->
+<!--ng-if="!vm.noMoreItemsAvailable"-->
+<!--on-infinite="vm.loadMore()"-->
+<!--distance="5%"></ion-infinite-scroll>-->
+
+<!--</ion-content>-->
+
+
+<!--<ion-view view-title="PHOTOS" ng-init="vm.getPhotos()">-->
+<!--<ion-nav-bar class="bar-positive ">-->
+
+<!--</ion-nav-bar>-->
+
+<!--<ion-content>-->
+
+<!--&lt;!&ndash;<div class="list card" ng-repeat="photo in vm.photos">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;<div class="item item-image">&ndash;&gt;-->
+<!--&lt;!&ndash;<img ng-src="{{photo.image_url}}">&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="item ">&ndash;&gt;-->
+<!--&lt;!&ndash;<h3>{{photo.name}}</h3>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<p>{{photo.description}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<ul class="photo-data">&ndash;&gt;-->
+<!--&lt;!&ndash;<li><i class="icon ion-star"></i>{{photo.favorites_count}}</li>&ndash;&gt;-->
+<!--&lt;!&ndash;<li><i class="icon ion-eye"></i>{{photo.times_viewed}}</li>&ndash;&gt;-->
+<!--&lt;!&ndash;<li><i class="icon ion-thumbsup"></i>{{photo.positive_votes_count}}</li>&ndash;&gt;-->
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+<!--<ion-infinite-scroll-->
+<!--immediate-check="false"-->
+<!--ng-if="vm.moreDataCanBeLoaded()"-->
+<!--on-infinite="vm.loadMore()"-->
+<!--distance="5%">-->
+<!--</ion-infinite-scroll>-->
+
+<!--</ion-content>-->

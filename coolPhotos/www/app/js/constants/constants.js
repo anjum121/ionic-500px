@@ -12,6 +12,10 @@
       },
       'preferredLocale': 'en_US'
     })
+    .constant('API',{
+      "domain":'https://api.500px.com/v1/',
+      "consumerKey": 'nL0nivxA4vjhVpD0VpiXIgqOXgShgst3kR1bKF8S'
+    })
 
 
 }());

@@ -8,3 +8,5 @@ out
 gen
 coolPhotos/.editorconfig
 coolPhotos/.gitignore
+/coolPhotos/platforms/
+/coolPhotos/resources/

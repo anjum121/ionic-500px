@@ -17,4 +17,10 @@
       tmhDynamicLocaleProvider.localeLocationPattern('lib/angular-i18n/angular-locale_{{locale}}.js');
     })
 
+   .config(function(RestangularProvider, API) {
+    RestangularProvider.setBaseUrl(API.domain);
+
+    
+
+  });
 }());

@@ -18,7 +18,8 @@
           url: '/welcome',
           views: {
             'menuContent': {
-              templateUrl: 'app/js/views/welcome/welcome.html'
+              templateUrl: 'app/js/views/welcome/welcome.html',
+              controller: 'welcomeCtrl as vm'
             }
           }
         })
@@ -32,14 +33,7 @@
           }
         })
 
-        .state('app.browse', {
-          url: '/browse',
-          views: {
-            'menuContent': {
-              templateUrl: 'templates/browse.html'
-            }
-          }
-        })
+
         .state('app.settings', {
           url: '/settings',
           views: {
