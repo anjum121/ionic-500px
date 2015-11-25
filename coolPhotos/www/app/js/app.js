@@ -5,7 +5,8 @@
     'ngCookies',
     'restangular',
     'pascalprecht.translate',// angular-translate
-    'tmh.dynamicLocale'// angular-dynamic-locale
+    'tmh.dynamicLocale',// angular-dynamic-locale
+      'angular-carousel'
   ])
     .run(function ($ionicPlatform) {
       $ionicPlatform.ready(function () {

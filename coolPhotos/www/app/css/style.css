@@ -1,1 +1,22 @@
 /* Empty. Add your own CSS if you like */
+
+.appTitle{
+    padding: 20px 0;
+}
+.appTitle h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.home-page-slider{
+    padding: 20px 0;
+}
+
+ul[rn-carousel] {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    overflow: visible!important;
+}

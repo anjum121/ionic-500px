@@ -6,47 +6,24 @@
     <button class="button button-clear button-positive"></button>
   </div>
 
-    <ion-content class="has-header">
-      <div class="list card" ng-repeat="photo in vm.photos">
+    <ion-content class="has-header" has-bouncing="false">
 
-        <div class="item item-avatar">
-        <img ng-src="{{photo.user.userpic_https_url}}">
-        <h2>{{photo.user.fullname}}</h2>
-        <p>{{photo.user.city}}, {{photo.user.country}}</p>
+
+        <div class="appTitle"><h1>Fresh Photo</h1></div>
+        <div class="list list-inset home-page-slider">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search">
+            </label>
         </div>
 
-        <div class="  ">
-        <img class="full-image" ng-src="{{photo.image_url}}">
-        <!--<p>-->
-        <!--{{photo.description}}-->
-        <!--</p>-->
-        <!--<p class="item-body">-->
-        <!--<a href="#" class="subdued">{{photo.favorites_count}} Like</a>-->
-        <!--<a href="#" class="subdued">{{photo.comments_count}} Comments</a>-->
-        <!--</p>-->
-        </div>
 
-        <div class="item tabs tabs-secondary tabs-icon-left">
-          <a class="tab-item" href="#">
-            <i class="icon ion-thumbsup"></i>
-            {{photo.favorites_count}} Like
-          </a>
-          <a class="tab-item" href="#">
-            <i class="icon ion-chatbox"></i>
-            {{photo.comments_count}} Comment
-          </a>
-          <a class="tab-item" href="#">
-            <i class="icon ion-share"></i>
-            Share
-          </a>
-        </div>
-      </div>
-        <ion-infinite-scroll
-          on-infinite="vm.loadMore()"
-          distance="5%"
-          ng-if="!moreDataCanBeLoaded"
-          >
-        </ion-infinite-scroll>
+        <ul rn-carousel class="image">
+            <li ng-repeat="photo in vm.photos">
+                <div class="layer"><img class="full-image" ng-src="{{photo.image_url}}"></div>
+            </li>
+        </ul>
+
     </ion-content>
 </ion-view>
 

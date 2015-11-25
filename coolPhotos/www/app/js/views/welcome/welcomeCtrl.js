@@ -14,7 +14,7 @@
     vm.photos = [];
     vm.currentPage = 0;
     vm.pagesCount = 0;
-    var featured = 'popular';
+    var featured = 'editors';
 
 
     var getPhotos = function () {
@@ -29,6 +29,8 @@
     vm.moreDataCanBeLoaded = function () {
       return vm.currentPage <= vm.pagesCount;
     };
+
+      getPhotos();
 
     vm.loadMore = function () {
       vm.currentPage += 1;
