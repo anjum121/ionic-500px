@@ -1,0 +1,45 @@
+<ion-view view-title="Search">
+  <ion-content>
+    <h1>Search</h1>
+      <div class="list card" ng-repeat="photo in vm.photos">
+
+          <div class="item item-avatar">
+              <img ng-src="{{photo.user.userpic_https_url}}">
+              <h2>{{photo.user.fullname}}</h2>
+              <p>{{photo.user.city}}, {{photo.user.country}}</p>
+          </div>
+
+          <div class="  ">
+              <img class="full-image" ng-src="{{photo.image_url}}">
+              <!--<p>-->
+              <!--{{photo.description}}-->
+              <!--</p>-->
+              <!--<p class="item-body">-->
+              <!--<a href="#" class="subdued">{{photo.favorites_count}} Like</a>-->
+              <!--<a href="#" class="subdued">{{photo.comments_count}} Comments</a>-->
+              <!--</p>-->
+          </div>
+
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                  <i class="icon ion-thumbsup"></i>
+                  {{photo.favorites_count}} Like
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-chatbox"></i>
+                  {{photo.comments_count}} Comment
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-share"></i>
+                  Share
+              </a>
+          </div>
+      </div>
+      <ion-infinite-scroll
+              on-infinite="vm.loadMore()"
+              distance="5%"
+              ng-if="!moreDataCanBeLoaded"
+              >
+      </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

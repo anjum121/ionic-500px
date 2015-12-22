@@ -14,7 +14,7 @@
     vm.photos = [];
     vm.currentPage = 0;
     vm.pagesCount = 0;
-    var featured = 'Today';
+    var featured = 'popular';
 
 
     var getPhotos = function () {
