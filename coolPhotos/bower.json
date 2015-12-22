@@ -12,6 +12,7 @@
     "angular-dynamic-locale": "~0.1.28",
     "angular-i18n": "~1.4.7",
     "restangular": "~1.5.1",
-    "angular-carousel": "~1.0.1"
+    "angular-carousel": "~1.0.1",
+    "Ionicons": "ionicons#~2.0.1"
   }
 }

@@ -13,17 +13,16 @@
           feature: featureed,
           consumer_key: API.consumerKey,
           page: pageNum,
-          image_size: 440
-
+          image_size : 440
         };
 
         console.log(param)
 
         return Restangular.all('')
           .get("photos", param)
-          .then(function (data) {
+          .then(function(data){
             return data
-          }, function (errro) {
+          },function(errro){
             return errro
           });
 
@@ -36,9 +35,9 @@
       getMenu: function () {
         return Restangular.all('')
           .get("photos", param)
-          .then(function (success) {
+          .then(function(success){
             return success;
-          }, function (error) {
+          }, function(error){
             return error;
           });
       }

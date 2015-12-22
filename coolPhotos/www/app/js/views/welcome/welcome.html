@@ -2,29 +2,38 @@
 
   <div class="bar bar-header">
     <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
-    <div class="h1 title"> </div>
+    <div class="h1 title"></div>
     <button class="button button-clear button-positive"></button>
   </div>
 
-    <ion-content class="has-header" has-bouncing="false">
+  <ion-content class="has-header" has-bouncing="false">
 
 
-        <div class="appTitle"><h1>Fresh Photo</h1></div>
-        <div class="list list-inset home-page-slider">
-            <label class="item item-input">
-                <i class="icon ion-search placeholder-icon"></i>
-                <input type="text" placeholder="Search">
-            </label>
-        </div>
+    <div class="appTitle"><h1>Fresh Photo</h1></div>
+    <div class="list list-inset home-page-slider">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search">
+      </label>
+    </div>
 
 
-        <ul rn-carousel class="image">
-            <li ng-repeat="photo in vm.photos">
-                <div class="layer"><img class="full-image" ng-src="{{photo.image_url}}"></div>
-            </li>
-        </ul>
+    <input ng-model="sliderItem.index" type="hidden"/>
+    <ul rn-carousel class="image mySlider"   rn-carousel-buffered
+        rn-carousel-index="sliderItem.index">
+      <span> <i class=" icon ion-loading-c"></i> </span>
+      <div class="showLoading" ng-if="sliderItem.index == 0">
+        <span> <i class=" icon ion-loading-c"></i> </span>
+      </div>
 
-    </ion-content>
+
+      <li ng-repeat="photo in vm.photos">
+        <div class="layer"><img class="full-image" ng-src="{{photo.image_url}}"></div>
+      </li>
+    </ul>
+
+
+  </ion-content>
 </ion-view>
 
 
