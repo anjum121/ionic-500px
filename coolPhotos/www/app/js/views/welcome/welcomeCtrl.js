@@ -53,28 +53,6 @@
 
 
 
-    //vm.getPhotos = function(){
-    //  preLoader.show('Loading Photos');
-    //
-    //  viewModelHelper.apiGet('user',
-    //    vm.currentPage,null,
-    //    function(result){
-    //      vm.photos =  result.data.photos;
-    //      vm.pagesCount = result.data.total_pages;
-    //      $scope.$broadcast('scroll.infiniteScrollComplete');
-    //      preLoader.hide();
-    //
-    //    });
-    //
-    //
-    //}
-    //vm.moreDataCanBeLoaded = function(){
-    //  return vm.currentPage <= vm.pagesCount;
-    //}
-    //vm.loadMore = function(){
-    //  vm.currentPage += 1;
-    //  vm.getPhotos();
-    //}
 
 
   }

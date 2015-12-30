@@ -8,16 +8,14 @@
 
   function factoryFunction($log, Restangular, API) {
     return {
-      getPhotos: function (featureed, pageNum) {
+      getPhotos: function (featured, pageNum) {
         var param = {
-          feature: featureed,
+          feature: featured,
           consumer_key: API.consumerKey,
           page: pageNum,
           image_size : 440
         };
-
         console.log(param)
-
         return Restangular.all('')
           .get("photos", param)
           .then(function(data){
@@ -40,6 +38,25 @@
           }, function(error){
             return error;
           });
+      },
+
+      getSearchedImages: function (only, exclude, pageNum) {
+        var param = {
+          only: only,
+          exclude:exclude,
+          consumer_key: API.consumerKey,
+          page: pageNum,
+          image_size : 440
+        };
+        console.log(param)
+        return Restangular.all('')
+            .get("photos", param)
+            .then(function(data){
+              return data
+            },function(errro){
+              return errro
+            });
+
       }
     }
   }

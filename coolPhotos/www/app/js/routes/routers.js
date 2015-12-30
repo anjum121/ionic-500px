@@ -28,7 +28,8 @@
           url: '/search',
           views: {
             'menuContent': {
-              templateUrl: 'app/js/views/search/search.html'
+              templateUrl: 'app/js/views/search/search.html',
+              controller: 'settingsCtrl as vm'
             }
           }
         })

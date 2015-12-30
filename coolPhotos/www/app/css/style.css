@@ -20,3 +20,19 @@ ul[rn-carousel] {
     display: block;
     overflow: visible!important;
 }
+
+.full-image{padding: 5px;}
+.card-1 .full-image{padding: 0;}
+
+.user-action{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.user-action li{
+    list-style: none;
+    float: left;
+    width: 33%;
+}
