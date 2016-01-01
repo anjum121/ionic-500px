@@ -1,0 +1,47 @@
+<ion-view cache-view="true" hide-nav-bar="true" view-title='vm.pageTitle'>
+    <ion-content>
+
+
+        <div class="bar bar-header item-input-inset">
+
+            <div class="col col-10" menu-toggle="left">
+                <button class="button button-icon icon ion-navicon" ></button>
+            </div>
+            <div class="col col-10 ">
+                <button class="button button-icon ion-ios-arrow-back"  ng-click="goBack()"></button>
+            </div>
+            <div class="col   ">
+                 {{vm.pageTitle}}
+            </div>
+
+
+        </div>
+
+
+        <div class="list card" collection-repeat="photo in vm.photos"
+             item-height="426px">
+
+            <div class="item item-avatar">
+                <img ng-src="{{photo.user.userpic_https_url}}">
+
+                <h2>{{photo.user.fullname}}</h2>
+
+                <p>{{photo.user.city}}, {{photo.user.country}}</p>
+            </div>
+
+            <div class="card-1">
+                <img class="full-image" ng-src="{{photo.image_url}}">
+            </div>
+
+
+        </div>
+        <ion-infinite-scroll
+                on-infinite="vm.loadMore()"
+                distance="5%"
+                ng-if="!moreDataCanBeLoaded"
+                >
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+
+

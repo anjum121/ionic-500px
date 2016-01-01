@@ -12,6 +12,8 @@
       });
       $translateProvider.preferredLanguage('en_US');// is applied on first load
       $translateProvider.useLocalStorage();// saves selected language to localStorage
+        // Enable escaping of HTML
+        $translateProvider.useSanitizeValueStrategy('sanitize');
     })
     .config(function (tmhDynamicLocaleProvider) {
       tmhDynamicLocaleProvider.localeLocationPattern('lib/angular-i18n/angular-locale_{{locale}}.js');

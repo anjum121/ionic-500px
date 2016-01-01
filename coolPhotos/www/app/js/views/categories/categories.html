@@ -1,0 +1,19 @@
+<ion-view view-title='{{"views.categories.title" | translate}}'>
+    <ion-content>
+
+        <ul class="list">
+            <li class="item" ng-repeat="item in vm.menu"
+                ui-sref="app.category({url: (item.cat | webUrl | lowercase), categoryId: item.id, category: item.cat})"
+                ng-class-odd="'even'"
+                >
+
+                 {{item.cat}}
+
+            </li>
+        </ul>
+
+
+
+
+    </ion-content>
+</ion-view>

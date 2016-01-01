@@ -2,7 +2,6 @@
     <ion-content>
 
 
-        
         <div class="bar bar-header item-input-inset">
             <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
             <label class="item-input-wrapper">
@@ -14,11 +13,13 @@
 
 
         <div class="list card" collection-repeat="photo in vm.photos"
-             item-height="426px"  >
+             item-height="426px">
 
             <div class="item item-avatar">
                 <img ng-src="{{photo.user.userpic_https_url}}">
+
                 <h2>{{photo.user.fullname}}</h2>
+
                 <p>{{photo.user.city}}, {{photo.user.country}}</p>
             </div>
 
@@ -29,7 +30,7 @@
                         <i class="icon ion-thumbsup"></i>
                         {{photo.favorites_count}} Like
                     </a></li>
-                    <li> <a class="tab-item" href="#">
+                    <li><a class="tab-item" href="#">
                         <i class="icon ion-chatbox"></i>
                         {{photo.comments_count}} Comment
                     </a></li>
@@ -40,8 +41,6 @@
                         </a>
                     </li>
                 </ul>
-
-
 
 
                 <img class="full-image" ng-src="{{photo.image_url}}">

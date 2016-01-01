@@ -17,7 +17,7 @@
         var exclude = 'null';
 
         var getPhotos = function () {
-            apiFactory.getSearchedImages(only,exclude, vm.currentPage )
+            apiFactory.getSearchedImages(only, exclude, vm.currentPage )
                 .then(function (result) {
                     vm.pagesCount = result.total_pages;
                     vm.photos = vm.photos.concat(result.photos);

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 0,
+    "cat": "Uncategorized"
+  },
+  {
+    "id": 10,
+    "cat": "Abstract"
+  },
+  {
+    "id": 11,
+    "cat": "Animals"
+  },
+  {
+    "id": 5,
+    "cat": "Black and White"
+  },
+  {
+    "id": 1,
+    "cat": "Celebrities"
+  },
+  {
+    "id": 9,
+    "cat": "City and Architecture"
+  },
+  {
+    "id": 15,
+    "cat": "Commercial"
+  },
+  {
+    "id": 16,
+    "cat": "Concert"
+  },
+  {
+    "id": 20,
+    "cat": "Family"
+  },
+  {
+    "id": 14,
+    "cat": "Fashion"
+  },
+  {
+    "id": 2,
+    "cat": "Film"
+  },
+  {
+    "id": 24,
+    "cat": "Fine Art"
+  },
+  {
+    "id": 23,
+    "cat": "Food"
+  },
+  {
+    "id": 3,
+    "cat": "Journalism"
+  },
+  {
+    "id": 8,
+    "cat": "Landscapes"
+  },
+  {
+    "id": 12,
+    "cat": "Macro"
+  },
+  {
+    "id": 18,
+    "cat": "Nature"
+  },
+  {
+    "id": 4,
+    "cat": "Nude"
+  },
+  {
+    "id": 7,
+    "cat": "People"
+  },
+  {
+    "id": 19,
+    "cat": "Performing Arts"
+  },
+  {
+    "id": 17,
+    "cat": "Sport"
+  },
+  {
+    "id": 6,
+    "cat": "Still Life"
+  },
+  {
+    "id": 21,
+    "cat": "Street"
+  },
+  {
+    "id": 26,
+    "cat": "Transportation"
+  },
+  {
+    "id": 13,
+    "cat": "Travel"
+  },
+  {
+    "id": 22,
+    "cat": "Underwater"
+  },
+  {
+    "id": 27,
+    "cat": "Urban Exploration"
+  },
+  {
+    "id": 25,
+    "cat": "Wedding New!"
+  }
+]

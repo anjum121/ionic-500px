@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
 
-  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-  <link href="app/css/ionicons.css" rel="stylesheet">
-  <link href="app/css/style.css" rel="stylesheet">
-  <link href="lib/angular-carousel/dist/angular-carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="app/css/ionicons.css" rel="stylesheet">
+    <link href="app/css/style.css" rel="stylesheet">
+    <link href="lib/angular-carousel/dist/angular-carousel.css" rel="stylesheet" type="text/css"/>
 
-  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-  <link href="css/ionic.app.css" rel="stylesheet">
-  -->
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
 
-  <!-- ionic/angularjs js -->
-  <script src="lib/ionic/js/ionic.bundle.js"></script>
-  <script src="lib/angular-cookies/angular-cookies.js"></script>
-  <script src="lib/lodash/lodash.js"></script>
-  <script src="lib/restangular/dist/restangular.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/lodash/lodash.js"></script>
+    <script src="lib/restangular/dist/restangular.js"></script>
 
-  <script src="lib/angular-translate/angular-translate.js"></script>
-  <script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
-  <script src="lib/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
-  <script src="lib/angular-translate-storage-local/angular-translate-storage-local.js"></script>
-  <script src="lib/angular-translate-handler-log/angular-translate-handler-log.js"></script>
-  <script src="lib/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+    <script src="lib/angular-translate/angular-translate.js"></script>
+    <script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="lib/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+    <script src="lib/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+    <script src="lib/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+    <script src="lib/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
 
-  <script src="lib/angular-touch/angular-touch.js"></script>
-  <script src="lib/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="lib/angular-touch/angular-touch.js"></script>
+    <script src="lib/angular-carousel/dist/angular-carousel.js"></script>
 
 
-  <!-- cordova script (this will be a 404 during development) -->
-  <script src="cordova.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
 
-  <!-- your app's js -->
-  <script src="app/js/app.js"></script>
-  <script src="app/js/constants/constants.js"></script>
-  <script src="app/js/config/config.js"></script>
-  <script src="app/js/routes/routers.js"></script>
+    <!-- your app's js -->
+    <script src="app/js/app.js"></script>
+    <script src="app/js/constants/constants.js"></script>
+    <script src="app/js/config/config.js"></script>
+    <script src="app/js/routes/routers.js"></script>
+    <script src="app/js/filters/filters.js"></script>
 
-  <script src="app/js/services/lang/lang.js"></script>
-  <script src="app/js/services/preloader/preloader.js"></script>
-  <script src="app/js/services/viewModelHelper/viewModelHelper.js"></script>
-  <script src="app/js/services/viewModelHelper/data.js"></script>
+    <script src="app/js/services/lang/lang.js"></script>
+    <script src="app/js/services/preloader/preloader.js"></script>
+    <script src="app/js/services/viewModelHelper/viewModelHelper.js"></script>
+    <script src="app/js/services/viewModelHelper/data.js"></script>
+    <script src="app/js/services/categories/categories.js"></script>
+    <script src="app/js/services/categories/category.js"></script>
 
-  <script src="app/js/directive/LanguageSelectDirective.js"></script>
+    <script src="app/js/directive/LanguageSelectDirective.js"></script>
 
-  <script src="app/js/views/welcome/welcomeCtrl.js"></script>
-  <script src="app/js/views/menu/menuCtrl.js"></script>
-  <script src="app/js/views/settings/settingsCtrl.js"></script>
-  <script src="app/js/views/search/searchCtrl.js"></script>
+    <script src="app/js/views/welcome/welcomeCtrl.js"></script>
+    <script src="app/js/views/menu/menuCtrl.js"></script>
+    <script src="app/js/views/settings/settingsCtrl.js"></script>
+    <script src="app/js/views/search/searchCtrl.js"></script>
+    <script src="app/js/views/categories/categoriesCtrl.js"></script>
+    <script src="app/js/views/categories/category.js"></script>
 </head>
 
 <body ng-app="coolPhotos">

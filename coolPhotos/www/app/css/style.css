@@ -36,3 +36,8 @@ ul[rn-carousel] {
     float: left;
     width: 33%;
 }
+
+.main-logo{
+    text-align: center;
+    padding: 21px;
+}
